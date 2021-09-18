@@ -7,7 +7,7 @@
         'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/BleinBlue.jpg', // 用户头像
       // 网站图标
       blogIcon:
-        'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/ic_anchor.png',
+        'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/knight.png',
     },
     banner: {
       home: {
@@ -17,6 +17,50 @@
         ],
         // 主页banner标语
         title: ['公主死去了，屠龙的少年还在燃烧'],
+      },
+      // 文章页头图
+      article: {
+        background: [
+          'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-m9wjv9.jpg',
+          'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-28zo8x.png',
+          'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-1kx6wg.jpg',
+        ],
+      },
+    },
+    // 侧边栏
+    sidebar: {
+      // 列表数据 ['导航名称', '链接', 'icon']
+      // 个人信息背景图
+      infoBackground:
+        'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/2.jpg',
+      // navList - 菜单导航
+      navList: [['Github', 'https://github.com/Authur942', 'icon-github']],
+      customList: {
+        我的标签: {
+          // 标题
+          data: [
+            // 列表数据 ['列表', '链接']
+            [
+              '有感而发',
+              'https://www.cnblogs.com/KleinBlue/category/2033252.html',
+            ],
+            // ['我的博客2', 'https://www.cnblogs.com/bndong/'],
+            // ['我的博客3', 'https://www.cnblogs.com/bndong/'],
+            // ['我的博客4', 'https://www.cnblogs.com/bndong/'],
+            // ['我的博客5', 'https://www.cnblogs.com/bndong/'],
+          ],
+          icon: 'icon-brush_fill', // 配置图标，参考文档：定制化/字体图标库
+        },
+        // "title2": { // 标题
+        //     "data": [ // 列表数据 ['列表', '链接']
+        //         ['我的博客6', 'https://www.cnblogs.com/bndong/'],
+        //         ['我的博客7', 'https://www.cnblogs.com/bndong/'],
+        //         ['我的博客8', 'https://www.cnblogs.com/bndong/'],
+        //         ['我的博客9', 'https://www.cnblogs.com/bndong/'],
+        //         ['我的博客10', 'https://www.cnblogs.com/bndong/'],
+        //     ],
+        //     "icon": "icon-brush_fill" // 配置图标，参考文档：定制化/字体图标库
+        //   },
       },
     },
     // 页脚
@@ -45,7 +89,10 @@
       homeBanner: {
         enable: true,
         options: {
-          radius: 15,
+          radius: 10,
+          density: 0.2,
+          color: 'random', // 颜色设置，“random” 为随机颜色
+          clearOffset: 0.3,
         },
       },
     },
