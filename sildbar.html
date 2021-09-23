@@ -1,22 +1,53 @@
 <script type="text/javascript">
+  let css0 = document.styleSheets[0]
+  let css0Last = css0.cssRules.length
+  css0.insertRule('body {overflow: hidden;}', css0Last + 0)
+  css0.insertRule('div#loading, a[name=top] {  display: auto }', css0Last + 1)
+</script>
+<script type="text/javascript">
   window.cnblogsConfig = {
+    // 用户信息
     info: {
-      name: 'KleinBlue', // 用户名
-      startDate: '2019-08-01', // 入园时间，年-月-日。入园时间查看方法：鼠标停留园龄时间上，会显示入园时间
+      // 用户名
+      name: 'KleinBlue',
+      // 入园时间，年-月-日。入园时间查看方法：鼠标停留园龄时间上，会显示入园时间
+      startDate: '2019-08-01',
+      // 用户头像
       avatar:
-        'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/BleinBlue.jpg', // 用户头像
+        'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/BleinBlue.jpg',
       // 网站图标
       blogIcon:
         'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/knight.png',
     },
+    // banner图
     banner: {
       home: {
         // 主页banner图片
         background: [
           'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-q232er.jpg',
+          'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-m9wjv9.jpg',
+          'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-28zo8x.png',
+          'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-1kx6wg.jpg',
+          'https://files.dbnuo.com/wallpaper/wallhaven-4ylgl0.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-ne7lr8.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-k9p8l6.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-xl67ov.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-dgekog.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-47ldq9.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-lm2762.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-13mk9v.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-2ew3pm.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-39qjjd.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-83w372.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-96w8e8.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-dgojvj.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-oxvkxp.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-83yl1y.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-6k88jq.webp',
         ],
         // 主页banner标语
-        title: ['公主死去了，屠龙的少年还在燃烧'],
+        title: [],
+        titleSource: 'one',
       },
       // 文章页头图
       article: {
@@ -24,6 +55,33 @@
           'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-m9wjv9.jpg',
           'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-28zo8x.png',
           'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/wallhaven-1kx6wg.jpg',
+          'https://files.dbnuo.com/wallpaper/wallhaven-d5yzvg.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-4d38m0.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-4gj334.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-dg6pel.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-13dv2g.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-wyomo6.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-j82g35.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-lqddel.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-83dkk1.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-r2yjg1.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-wymo2p.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-2e37y9.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-j5y525.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-132m93.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-49gw1n.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-96w5gk.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-96ymj1.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-ey1pow.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-kwkg5q.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-ym56zg.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-yml8wd.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-ym62z7.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-4o5zm9.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-6k3oox.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-dgeqoj.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-1j65pv.webp',
+          'https://files.dbnuo.com/wallpaper/wallhaven-kwxz16.webp',
         ],
       },
     },
@@ -34,52 +92,62 @@
       infoBackground:
         'https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@1.0/image/2.jpg',
       // navList - 菜单导航
-      navList: [['Github', 'https://github.com/Authur942', 'icon-github']],
-      customList: {
-        我的标签: {
-          // 标题
-          data: [
-            // 列表数据 ['列表', '链接']
-            [
-              '有感而发',
-              'https://www.cnblogs.com/KleinBlue/category/2033252.html',
-            ],
-            // ['我的博客2', 'https://www.cnblogs.com/bndong/'],
-            // ['我的博客3', 'https://www.cnblogs.com/bndong/'],
-            // ['我的博客4', 'https://www.cnblogs.com/bndong/'],
-            // ['我的博客5', 'https://www.cnblogs.com/bndong/'],
-          ],
-          icon: 'icon-brush_fill', // 配置图标，参考文档：定制化/字体图标库
-        },
-        // "title2": { // 标题
-        //     "data": [ // 列表数据 ['列表', '链接']
-        //         ['我的博客6', 'https://www.cnblogs.com/bndong/'],
-        //         ['我的博客7', 'https://www.cnblogs.com/bndong/'],
-        //         ['我的博客8', 'https://www.cnblogs.com/bndong/'],
-        //         ['我的博客9', 'https://www.cnblogs.com/bndong/'],
-        //         ['我的博客10', 'https://www.cnblogs.com/bndong/'],
-        //     ],
-        //     "icon": "icon-brush_fill" // 配置图标，参考文档：定制化/字体图标库
-        //   },
-      },
+      navList: [
+        ['CnBlogs', 'https://www.cnblogs.com/', 'icon-cnblogs'],
+        ['Github', 'https://github.com/Authur942', 'icon-github'],
+      ],
+      customList: {},
     },
     // 页脚
     footer: {
       text: {
-        left: '莫道佳人无好酒',
-        right: '清茶亦可解君愁',
+        left: '埋骨何须桑梓地',
+        right: '人生无处不青山',
         // 标语字体图标。
         iconFont: {
           icon: 'icon-xl',
-          color: 'red',
-          fontSize: '16px',
+          color: 'blue',
+          fontSize: '18px',
         },
       },
     },
     animate: {
+      backgroundMouse: {
+        enable: true,
+      },
+      // 鼠标动效
+      mouse: {
+        enable: true,
+        options: {
+          size: 10,
+          sizeF: 34,
+        },
+      },
+      // 轮播图
+      bannerImages: {
+        enable: true,
+        options: {
+          itemNum: 4,
+          current: -1,
+          sort: 1,
+          time: 20000,
+        },
+      },
       // 背景动效
       background: {
         enable: true,
+        options: {
+          colorSaturation: '60%',
+          colorBrightness: '50%',
+          colorAlpha: 0.5,
+          colorCycleSpeed: 5,
+          verticalPosition: 'random',
+          horizontalSpeed: 200,
+          ribbonCount: 3,
+          strokeSize: 0,
+          parallaxAmount: -0.2,
+          animateSections: true,
+        },
       },
       // 文章banner动效配置
       articleBanner: {
@@ -87,7 +155,7 @@
       },
       // 主页banner动效配置
       homeBanner: {
-        enable: true,
+        enable: false,
         options: {
           radius: 10,
           density: 0.2,
@@ -97,8 +165,10 @@
       },
     },
   }
+
+  window.cnblogsConfig.cnzz = '1280357619'
 </script>
 <script
-  src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.7/dist/simpleMemory.js"
+  src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.8/dist/simpleMemory.js"
   defer
 ></script>
