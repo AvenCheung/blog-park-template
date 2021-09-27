@@ -116,6 +116,41 @@
         },
       },
     },
+    // 代码样式
+    code: {
+      type: 'hljs',
+      options: {
+        hljs: {
+          theme: 'atom-one-dark-reasonable',
+          languages: [
+            'Bash',
+            'CSS',
+            'Dockerfile',
+            'Go',
+            'HTML',
+            'XML',
+            'HTTP',
+            'Less',
+            'Lua',
+            'PHP',
+            'Python',
+            'Shell',
+            'SQL',
+            'Java',
+            'JSON',
+          ],
+        },
+        maxHeight: '',
+        line: true,
+        macStyle: true,
+      },
+    },
+    // 文章右侧栏
+    articleDirectory: {
+      position: 'right',
+      minBodyWeight: 1350,
+    },
+    // 动效
     animate: {
       backgroundMouse: {
         enable: true,
@@ -1002,6 +1037,65 @@
       ],
     },
   ]
+</script>
+<script>
+  // 鼠标点击特效
+  var a_idx = 0
+  $('body').click(function (e) {
+    var a = new Array(
+      '🌈🌈感谢观看🌈🌈',
+      '🌛🌝🌛🌝🌛',
+      '🔥🔥热烈欢迎🔥🔥',
+      '🔆🔅🔆🔅🔆',
+      '💖💖喜欢就点个赞呗💖💖',
+      '⚡⚡⚡⚡⚡',
+      '💝💝快去点赞💝💝',
+      '🌌 🌌 🌌 🌌 🌌',
+      '💦💦不是点这里哦💦💦',
+      '🌞🌞🌞🌞🌞',
+      '🚩点赞在底部啦🚩',
+      '💯💯💯💯💯',
+      '💭💭💭💭💭',
+      '💫💫💫💫💫',
+      '💤💤💤💤💤',
+      '🌍🌍🌍🌍🌍',
+      '🌟⭐🌟⭐🌟',
+      '💧🌊💧🌊💧',
+      '🌀🌠🌀🌠🌀',
+      '😈😈😈😈😈',
+      '🤣🤣🤣🤣🤣',
+    )
+    var $i = $('<span></span>').text(a[a_idx])
+    a_idx = (a_idx + 1) % a.length
+    var x = e.pageX,
+      y = e.pageY
+    $i.css({
+      'z-index': 999999999999999,
+      top: y - 20,
+      left: x,
+      position: 'absolute',
+      'font-weight': 'bold',
+      color:
+        'rgb(' +
+        ~~(255 * Math.random()) +
+        ',' +
+        ~~(255 * Math.random()) +
+        ',' +
+        ~~(255 * Math.random()) +
+        ')',
+    })
+    $('body').append($i)
+    $i.animate(
+      {
+        top: y - 180,
+        opacity: 0,
+      },
+      1500,
+      function () {
+        $i.remove()
+      }
+    )
+  })
 </script>
 <!-- <script src="https://cdn.jsdelivr.net/gh/Authur942/blog-park-template@v2.0.8/simpleMemory.js" defer></script> -->
 <script
