@@ -11,7 +11,7 @@ button {
 .postTitle a:link,
 html {
   -webkit-tap-highlight-color: transparent;
-  cursor: none;
+  /* cursor: none; */
 }
 #blog-calendar,
 .code-copay-btn,
