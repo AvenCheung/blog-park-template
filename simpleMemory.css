@@ -121,6 +121,7 @@ body {
   font-size: 12px;
   font-family: Merriweather, "Open Sans", "Microsoft Jhenghei", "Microsoft Yahei", sans-serif;
   color: #3a4145;
+  font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   overflow: hidden;
